@@ -1,0 +1,105 @@
+/* ******************Root*********************************** */
+*{
+    /* margin: 0; */
+    /* padding: 0; */
+}
+body{
+    background-attachment: fixed;
+    position: relative;
+    background-image: url(src/assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 635px;
+}
+.container{
+    /* background-image: url(src/assets/background.jpg); */
+    transform: translate(0%,10%);
+    /* margin: auto; */
+    border-radius: 50%;
+    -webkit-mask-attachment: fixed;
+
+}
+/* **********************About-app********************************** */
+.About-app{
+    /* height: 200px;
+    width:200px; */
+    background-color: rgba(0,0,0,.6);
+    box-shadow: 0 2px 0 1px rgba(0, 0, 0, .2);
+    /* display: none; */
+}
+.About-app h2,p,h5{
+    font-family: 'Lobster Two', cursive;
+    text-align: center;
+    color:#ffff;
+    text-shadow: 0 2px 2px rgba(0,0,0,.7);
+    line-height: 2em;
+
+}
+/* ***************************log-in************************************* */
+.log-in{
+    background-color: #e3e3e3;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .3);
+    
+}
+.log-in h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 70px;
+    text-align: center;
+    padding: 30px;
+    text-shadow: 0 2px 2px #ffff;
+}
+.log-in input{
+    display: block;
+    /* margin: 20px; */
+    border-radius: 5%;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,.2);
+    background-color: transparent;
+    transition: .5s ease-in-out;
+}
+.log-in input:hover{
+    transform: scale(1.1);
+    border-bottom: 2px solid rgba(0,0,0,.4);
+}
+.log-in label{
+    
+}
+form{
+    border-right: 2px solid rgba(0,0,0,.2);
+    margin: 30px;
+}
+.login{
+    transform: translate(20%,40%);
+}
+/* .inputtarea{
+    display: inline;
+} */
+::placeholder{
+    font-family: 'Great Vibes', cursive;
+    font-size: 18px;
+    line-height: 18px;
+}
+.firstButton{
+    background-color: rgba(62, 216, 241,.8) ;
+    color: #ffff;
+    height: 50px;
+    /* width: 180px; */
+    transition: .5s ease-in-out;
+}
+.firstButton:hover{
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,.3);
+}
+.works{
+    border-radius: 50%;
+    position: absolute;
+    margin-left: -60px;
+    font-size: 30px;
+    border: none;
+    background-color: #e3e3e3;
+    box-shadow: -2px 0 0 1px rgba(0, 0, 0, .2);
+    font-family: 'Playfair Display', serif;
+}
+.works:hover{
+    cursor: pointer;
+}
+

@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Quotes';
+  showHowItWorks() {
+    alert('show how it works div');
+    // .About-app='visible'
+  }
 }
+
