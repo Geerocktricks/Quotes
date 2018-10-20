@@ -13,6 +13,7 @@ body{
 }
 .container{
     /* background-image: url(src/assets/background.jpg); */
+    background-size: contain;
     transform: translate(0%,10%);
     /* margin: auto; */
     border-radius: 50%;
@@ -35,6 +36,11 @@ body{
     line-height: 2em;
 
 }
+.img{
+    height: 150px;
+    transform: translate(110%,20%);
+    margin-bottom: 30px;
+}
 /* ***************************log-in************************************* */
 .log-in{
     background-color: #e3e3e3;
@@ -48,6 +54,67 @@ body{
     padding: 30px;
     text-shadow: 0 2px 2px #ffff;
 }
+.log-in span{
+    /* border-left: 2px solid black; */
+    box-shadow: none;
+    border: none;
+}
+.blinking-cursor {
+    font-family: 'Great Vibes', cursive;
+    font-weight: 100;
+    font-size: 70px;
+    color: #e3e3e3;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+  }
+  
+  @keyframes "blink" {
+    from, to {
+      color: #e3e3e3;
+    }
+    50% {
+      color : black;
+    }
+  }
+  
+  @-moz-keyframes blink {
+    from, to {
+      color: #e3e3e3;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-webkit-keyframes "blink" {
+    from, to {
+      color: #e3e3e3;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-ms-keyframes "blink" {
+    from, to {
+      color: #e3e3e3;
+    }
+    50% {
+      color: black;
+    }
+  }
+  
+  @-o-keyframes "blink" {
+    from, to {
+      color: transparent;
+    }
+    50% {
+      color: black;
+    }
+  }
 .log-in input{
     display: block;
     /* margin: 20px; */
@@ -83,7 +150,7 @@ form{
     background-color: rgba(62, 216, 241,.8) ;
     color: #ffff;
     height: 50px;
-    /* width: 180px; */
+    width: 180px;
     transition: .5s ease-in-out;
 }
 .firstButton:hover{
