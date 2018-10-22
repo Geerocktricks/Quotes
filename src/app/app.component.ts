@@ -6,10 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Quotes';
-  showHowItWorks() {
-    alert('show how it works div');
-    // .About-app='visible'
+ 
+  constructor(){
+    
   }
+  ngOnIt() {
+
+  }
+  addName(Name) {
+      alert(Name);
+      // return false;
+      
+  }
+
 }
 

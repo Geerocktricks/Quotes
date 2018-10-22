@@ -1,6 +1,7 @@
 <html>
   <head>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
   <body>
     <div class="container">
@@ -8,21 +9,88 @@
         <div class="col-md-2 about card">
             <div class="card-header">About</div>
             <div class="card-body">
-              <h6>Bio:</h6>
+              <ul>
+                <h5>Bio:</h5>
+                <p>{{Bio}}</p>
+                <li>
+                  {{Name}}
+                  <!-- **********about should go in here************* -->
+                </li>
+              </ul>
             </div>
         </div>
         <div class="col-md-6 main card">
-            <div class="card-header">UserName should also display here</div>
+            <div class="card-header">
+              <P>Name should display here too</P>
+            </div>
             <!-- <i class="fas fa-user-circle"></i> -->
             <div class="profile col-md-5">
-
+              
             </div>
             <!-- <div class="col-md-1 "><button id="type">&#9998;</button></div> -->
-            <textarea name="" id="" cols="40" rows="2" placeholder="Which quote is in mind?"></textarea>
-            <!-- <div class="card-footer">Footer</div> -->
+            <form (submit)= "addQuote(Quote.value)">
+              <label for="textarea1"></label>
+              <textarea name="" id="textarea1" cols="40" rows="2" placeholder="Which quote is in mind?" #Quote></textarea>
+              <button (click)="onClick()" height="50px" width="90px" id = "Publish" class="btn btn-success">Publish</button>
+            </form>
         </div>
-        <div class="col-md-3 imaged">
-          <h1>hstatsauiddvsdid</h1>
+        <div class="col-md-3 imaged card">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+          
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="background.jpg" alt="Los Angeles" height="300px" width="100%">
+              </div>
+              <div class="carousel-item">
+                <img src="background.jpg" alt="Chicago" height="400px">
+              </div>
+              <div class="carousel-item">
+                <img src="background.jpg" alt="New York" height="400px">
+              </div>
+            </div>
+          
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="col-md-3 one bg-danger">
+
+          </div>
+          <div class="col-md-10 card  Fill-New">
+            <ul>
+              <li *ngFor="let Quote of Quotes">
+                  <div class="profile ">
+              
+                   </div>
+              
+                {{Quote}}
+                <div class="card-footer vote">
+                  <p>Posted by <i>"-{{authorName}}"</i></p>
+                   <button (click)="upVote()" id="Vote"> &#x2764;</button>
+                  <button (click) = "downVote()" id="Vote">v</button>
+                </div>
+                
+                <button (click) = "deleteQuote(Quote)" id="delete"><span>X</span></button>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>

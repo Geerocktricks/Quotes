@@ -2,11 +2,25 @@ body{
     background-color:rgba(62, 216, 241,.8);
 }
 h4{
-    background-color: red;
+    /* background-color: red; */
 }
-.two{
-    background-color: blue;
+.two p{
+    font-family: 'Lobster Two', cursive;
+    font-size: 30px;
 }
-.three{
-    background-color:yellow;
+.img{
+    height: 90px;
+    padding: 10px;
+    background: #000;
+    opacity: .6;
+}
+.img:hover{
+    opacity: 7;
+}
+.logoName h5{
+    font-family: 'Great Vibes', cursive;
+    font-size: 25px; 
+    text-shadow: 0 2px 2px #ffff;
+    margin-top:30px;
+    margin-right: -20px;
 }

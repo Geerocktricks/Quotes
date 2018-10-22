@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { BodyComponent } from './body/body.component';
+import { GeneratedFile } from '@angular/compiler';
 
 @NgModule({
   declarations: [
@@ -17,4 +18,6 @@ import { BodyComponent } from './body/body.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+
+ }

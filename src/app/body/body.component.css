@@ -19,15 +19,16 @@
    background-color: #ededed; 
    border-radius: 50%;
    margin: 20px;
+   box-shadow: 0 1px 0 2px rgba(0, 0, 0, .1);
 }
 .main textarea{
     background-color: transparent;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, .2);
     font-size:20;
-    padding: 20px;
+    padding: 0px;
     text-align: center;
-    transform: translate(0%,0%);
+    transform: translate(20%,0%);
     margin-bottom: 20px;
 }
 .main textarea:hover{
@@ -49,13 +50,74 @@
     /* transform: scale(.90); */
 }
 .top{
-    background-color:red;
+    /* background-color:red; */
     width: 100%;
 }
 .card-header{
-    background-color: red;
+    background-color: whitesmoke;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
+}
+#Publish{
+    background-color: rgba(62, 216, 241,.8) ;
+    transform: translate(110%, -100%);
+    border: none;
+}
+#Publish:hover{
+    background-color: rgba(62, 216, 241,.5) ;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, .2);
 }
 /* **********************Imaged*************************** */
 .imaged{
-    background-color:aqua;
+    background-color:#dddfe2;
+    margin: 10px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .3);
+}
+/* ***********************Fill-New*************************** */
+.Fill-New{
+    border: none;
+}
+.Fill-New li{
+    background-color:#dddfe2;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, .3);
+    margin: 20px;
+    height: 250px;
+    width: 100%;
+    text-align: center;
+    list-style: none;
+    /* line-height: 250px; */
+    padding: 20px;
+    margin-left: -70px;
+}
+#delete{
+    background-color: #dddfe2;
+    width: 60px;
+    border-radius: 30%;
+    line-height: 60px;
+    box-shadow: none;
+    transform: translate(700%, -380%);
+    color: white;
+    text-shadow: 0 2px 2px rgba(0,0,0,.7);
+    border: none;
+    box-shadow: 0  0 -2px   rgba(0, 0, 0, .3);
+    cursor: pointer;
+}
+#delete:hover{
+    font-size: 20px;
+}
+.vote button{
+    background-color: rgba(62, 216, 241,.9) ;
+    color: #dddfe2;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    text-shadow: 0 2px 2px rgba(0,0,0,.7);
+    margin: 10px;
+    transform: translate(-450%, -110%);
+
+}
+.vote button:hover{
+    cursor: pointer;
+    color: #e3e3e3;
+    background-color: rgba(124, 187, 197, 0.9) ;
 }
