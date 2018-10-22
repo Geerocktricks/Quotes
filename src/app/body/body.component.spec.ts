@@ -6,7 +6,7 @@ describe('BodyComponent', () => {
   let component: BodyComponent;
   let fixture: ComponentFixture<BodyComponent>;
 
-//   beforeEach(async(() => {
+  beforeEach(async(() => {
 //     TestBed.configureTestingModule({
 //       declarations: [ BodyComponent ]
 //     })
